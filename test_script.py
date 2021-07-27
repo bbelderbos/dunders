@@ -8,10 +8,7 @@ def test_str(white_belt):
 
 
 def test_repr(white_belt):
-    belt = eval(repr(white_belt))
-    assert type(belt) is NinjaBelt
-    assert belt.name == "white"
-    assert belt.score == 10
+    assert repr(white_belt) == "NinjaBelt('white', 10)"
 
 
 def test_comparison(white_belt, yellow_belt):
