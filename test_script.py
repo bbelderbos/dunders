@@ -35,10 +35,6 @@ def test_contains(white_belt_with_users):
     assert "Josh" in white_belt_with_users
 
 
-def test_add_hashing(yellow_belt):
-    {yellow_belt: 2}
-
-
 def test_reversed(white_belt_with_users):
     users = white_belt_with_users[::-1]
     assert users == ["Ed", "Tim", "Josh"]
@@ -70,3 +66,7 @@ def test_context_manager_always_rollback(yellow_belt, capfd):
         "upper slide of bread\n"
         "lower slide of bread\n")  # always does the exit!
     assert output == expected
+
+
+def test_add_hashing(yellow_belt):
+    {yellow_belt: 2}
