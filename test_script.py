@@ -35,7 +35,8 @@ def test_comparison(white_belt, yellow_belt):
     assert yellow_belt > white_belt
     assert white_belt < yellow_belt
     assert yellow_belt != white_belt
-    assert white_belt == white_belt
+    another_white_belt = NinjaBelt("white", 10)
+    assert white_belt == another_white_belt
 
 
 def test_len(white_belt_with_users):
