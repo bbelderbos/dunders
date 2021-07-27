@@ -30,11 +30,11 @@ class NinjaBelt:
         print("I am callable")
 
     def __enter__(self):
-        print("upper slide of bread")
+        print("upper slice of bread")
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        print("lower slide of bread")
+        print("lower slice of bread")
 
     def __hash__(self):
         return hash((self.name, self.score))

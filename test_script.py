@@ -51,9 +51,9 @@ def test_context_manager(yellow_belt, capfd):
         print(belt)
     output = capfd.readouterr()[0]
     expected = (
-        "upper slide of bread\n"
+        "upper slice of bread\n"
         "Yellow (50 pt)\n"
-        "lower slide of bread\n")
+        "lower slice of bread\n")
     assert output == expected
 
 
@@ -63,8 +63,8 @@ def test_context_manager_always_rollback(yellow_belt, capfd):
             raise ValueError
     output = capfd.readouterr()[0]
     expected = (
-        "upper slide of bread\n"
-        "lower slide of bread\n")  # always does the exit!
+        "upper slice of bread\n"
+        "lower slice of bread\n")  # always does the exit!
     assert output == expected
 
 
