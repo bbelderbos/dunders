@@ -37,4 +37,5 @@ class NinjaBelt:
         print("lower slice of bread")
 
     def __hash__(self):
+        # for demo only, can be expensive
         return hash((self.name, self.score))
